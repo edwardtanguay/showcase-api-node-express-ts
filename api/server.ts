@@ -1,4 +1,5 @@
 import express from "express";
+import { flashcardRouter } from "./routers/flashcardRouter";
 
 export const app = express();
 app.use(express.json());
@@ -19,3 +20,5 @@ app.get("/", (_req: express.Request, res: express.Response) => {
     </html>
   `);
 });
+
+app.use("/api/flashcards", flashcardRouter);
