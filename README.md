@@ -1,4 +1,4 @@
-# showcase-node-api
+# showcase-api-node-express-ts
 
 Minimal Node/Express backend with TypeScript.
 
