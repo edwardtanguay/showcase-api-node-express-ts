@@ -1,8 +1,8 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
 
 export const flashcardRouter = Router();
 
-flashcardRouter.get("/", (_req, res) => {
+flashcardRouter.get("/", (_req:Request, res:Response) => {
 	res.json([
 		{
 			id: 1,
